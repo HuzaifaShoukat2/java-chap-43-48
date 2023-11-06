@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 40%;
+            margin-left: 30%;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .delete-btn {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 6px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .add-row-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-left: 30%;
+        }
+    </style>
+    </head>
+
+<body>
+    <!-- Question 1 -->
+<h1 style="color: black;">Question No 1</h1>
+<a style="cursor: pointer;"  onclick="alertOnClick()">ALert On Click Function</a>
+
+<!-- Question 2 -->
+<h1 style="color: black;">Question No 2</h1>
+<h3> Mobile Phones Lookup</h3>
+
+<img style="cursor: pointer;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGB1EC-GFnekgrxI9e3GZmbqm5TisR6VKh0Ssc3x6CkEJSiX2o5kN57rlkLz24xVxVfz0&usqp=CAU" alt="One Plus 9" width="150px" height="150px" onclick="mobilePurchased()">
+<a >One Plus 9</a>
+<img style="cursor: pointer;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gsWPXmGug9UMYvKD812mpXNAynuZL3ph_A&usqp=CAU" alt="Iphone 14 Pro Max" width="150px" height="150px" onclick="mobilePurchased()">
+<a>Iphone 14 Pro max</a>
+<img style="cursor: pointer;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEsPcmOOiywqoA7Q-M4URAwESRC-4tKZu70A&usqp=CAU" alt="Vivo Y73" width="150px" height="150px" onclick="mobilePurchased()">
+<a>Vivo Y73</a>
+<img style="cursor: pointer;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeu2yzVJWz7oMEYikqzvAWPUT5o0Yo1JPesw&usqp=CAU" alt="Google Pixel 4A" width="150px" height="150px" onclick="mobilePurchased()">
+<a>Google Pixel 4A</a>
+
+
+<!-- Question 3 -->
+
+
+<h1 style="color: black;">Question No 3</h1>
+
+
+<table id="studentTable">
+    <thead>
+        <tr>
+            <th>Number</th>
+            <th>Student Name</th>
+            <th>Class</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+        <tr>
+            <td>1</td>
+            <td>Huzaifa</td>
+            <td>12</td>
+            <td><button onclick="deleteRow(this)" class="delete-btn ">Delete</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Anees</td>
+            <td>12</td>
+            <td><button onclick="deleteRow(this)" class="delete-btn ">Delete</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Arsalan</td>
+            <td>12</td>
+            <td><button onclick="deleteRow(this)" class="delete-btn ">Delete</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Hamza</td>
+            <td>12</td>
+            <td><button onclick="deleteRow(this)" class="delete-btn ">Delete</button></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Hammad</td>
+            <td>12</td>
+            <td><button onclick="deleteRow(this)" class="delete-btn ">Delete</button></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Muzammil</td>
+            <td>11</td>
+            <td><button onclick="deleteRow(this)" class="delete-btn ">Delete</button></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Hamid</td>
+            <td>10</td>
+            <td><button onclick="deleteRow(this)" class="delete-btn ">Delete</button></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>moiz</td>
+            <td>11</td>
+            <td><button onclick="deleteRow(this)" class="delete-btn ">Delete</button></td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Ashraf</td>
+            <td>9</td>
+            <td><button onclick="deleteRow(this)" class="delete-btn ">Delete</button></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>younus</td>
+            <td>9</td>
+            <td><button onclick="deleteRow(this)" class="delete-btn ">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<button onclick="addRow()" class="add-row-btn">Add Row</button>
+
+<!-- Question 4 -->
+<h1 style="color: black;">Question No 4</h1>
+<img height="400px" width="400px" src="https://i0.wp.com/autodealing.pk/wp-content/uploads/2023/04/2b80535ca7fe757fdc8fe7041cdd7f36-removebg-preview.png?fit=666%2C375&ssl=1"  alt="Car Picture" 
+onMouseOver=" src='https://cdn.motor1.com/images/mgl/JO94P6/s1/most-expensive-cars-in-the-world.jpg';"
+ onMouseOut=" src='https://i0.wp.com/autodealing.pk/wp-content/uploads/2023/04/2b80535ca7fe757fdc8fe7041cdd7f36-removebg-preview.png?fit=666%2C375&ssl=1' ">
+
+<!-- Question 5 -->
+<h1 style="color: black;">Question No 5</h1>
+<button onclick="increment()">Increment</button>
+<h1 id="Numbering">0</h1>
+<button onclick="decrement()">Decrement</button>
+    <script src="./script.js"></script>
+</body>
+</html>
